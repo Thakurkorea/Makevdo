@@ -10,6 +10,7 @@ figs=(dir(join(filepath,'*.jpg')));
 % figs=(dir('D:\IBM\2021.06.11 SDSS\my_pic\*.jpg'));
 numbers = numel(figs)-4
 for ii=1:numbers %where N is the number of image
+% I=imread([filepath, 'MCP_', num2str(ii,'%d'),'.jpeg']) 
 %     I = imread('ani_%d_level_%s.png', ii); %read the next image
 %     I=imread(['E:/Matlab_program_experiment/Experiment_data/1000 itr_/' num2str(ii*100,'%d') '.jpg']);
 I=imread([filepath, num2str(ii,'%d') '.jpg']);
